@@ -17,9 +17,9 @@ function About() {
       <img className="ovals" src={ovals} alt={'ovals image for a cute design'} />
       <img className="image" src={headshot} alt={'headshot of dayana, owner of the site'} />
       <img className="circle" src={oval} alt={'circle image for a cute design'} />
-      <p className="about-presentation">Nice to meet you!</p>
-      <p className="about-presentation">I'm <spam className="highlight">Dayana Romero</spam>.</p>
-      <p className="about-author">Based in the USA, I'm a full-stack developer passionate about building accessible web apss that users love.</p>
+      <div className="presentation-section"><p className="about-presentation">Nice to</p><p className="about-presentation">meet you!</p></div>
+      <div className="presentation-section"><p className="about-presentation displace">I'm</p><div><spam className="highlight">Dayana Romero.</spam></div></div>
+      <p className="about-author">Based in the Miami, I'm a full-stack developer passionate about building accessible web apss that users love.</p>
       <p className="about-contact">CONTACT ME</p>
       </div>
       

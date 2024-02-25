@@ -45,19 +45,35 @@
   border: none;
   border-bottom: 1px solid $p-white;
   background-color: $s-black;
+  &:focus {
+    border-color: $p-green;
+    background-color: transparent;
+  }
 }
 .form-values {
   border: none;
   color: $p-grey;
   font-size: 1rem;
-  padding: 2rem 15rem 1rem 0rem;
+  text-indent: -15rem;
+  padding: 2rem 0rem 1rem 0rem;
   background-color: $s-black;
   border-bottom: 1px solid $p-white;
+
+  &:focus {
+    border-color: $p-green;
+    background-color: transparent !important;
+  }
 }
 .input-message {
-  padding-left: 1.2rem;
-  padding-bottom: 5rem;
-}
+    padding-left: 1.2rem;
+    padding-bottom: 5rem;
+  
+    &:focus {
+      border-color: $p-green;
+      background-color: transparent !important;
+    }
+  }
+  
 .contact-section_form--button {
   border: none;
   font-size: 1rem;

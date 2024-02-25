@@ -47,12 +47,19 @@
 .ovals {
     position: absolute;
     top: 5rem;
-    left: 0.1rem;
+    left: -10rem;
     @include tablet {
-        left: 0rem;
-        width: 45vw;
+        left: -7.5rem;
+        width: 55vw;
         height: 17vw;
         background-color: transparent;
+    }
+    @include desktop {
+        width: 33vw;
+        height: 10vw;
+        top: 8rem;
+        left: 0rem;
+        
     }
 }
 .image {
@@ -97,15 +104,21 @@
     align-items: first baseline;
     margin-top: 4rem;
     }
+    @include desktop {
+        flex-direction: row;
+        margin-top: 7.4rem;
+    }
 }
 .about-presentation {
     font-size: 2rem;
-    // padding: 0.5rem;
     @include tablet {
         font-size: 4rem;
         padding-top: 1.5rem;
         background-color: transparent;
         z-index: 1;
+    }
+    @include desktop {
+        font-size: 4.9rem;
     }
 }
 .about-author {
@@ -139,9 +152,21 @@
         margin-top: 0rem;
         background-color: transparent;
     }
+    @include desktop {
+        font-size: 3.9rem;
+        margin-top: 0rem;
+    }
 }
 .displace {
     position: relative;
+    bottom: 0rem;
+    left: 0rem;
+    @include tablet {
     bottom: 7rem;
     left: 19.5rem;
+    }
+    @include desktop {
+    bottom: 3.95rem;
+    left: 0rem;
+    }
 }

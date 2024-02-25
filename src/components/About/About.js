@@ -2,7 +2,7 @@ import React from "react";
 import "./About.scss";
 
 import headshot from "../../assets/images/headshot.png";
-import ovals from "../../assets/images/ovals.svg";
+import ovals from "../../assets/images/Ovals.svg";
 import oval from "../../assets/images/Oval.svg";
 import gitIcon from "../../assets/icons/akar-icons_github-fill.svg";
 import linkedln from "../../assets/icons/LinkedIn.svg";

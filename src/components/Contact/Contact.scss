@@ -1,0 +1,76 @@
+@use "../../styles/partials/__mixins" as *;
+@use "../../styles/partials/__variables" as *;
+
+.contact-section {
+  padding: 4rem 0.5rem 3rem 0.5rem;
+  background-color: $s-black;
+}
+.contact-section__title {
+  font-size: 2rem;
+  background-color: $s-black;
+  @include tablet {
+    font-size: 4rem;
+    padding-top: 1.5rem;
+    background-color: transparent;
+    z-index: 1;
+  }
+  @include desktop {
+    font-size: 4.9rem;
+  }
+}
+.contact-section__message {
+  font-size: 0.9rem;
+  color: $p-grey;
+  margin: 1.25rem 0.5rem;
+  letter-spacing: 0.01rem;
+  background-color: $s-black;
+  @include tablet {
+    width: 24rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.04rem;
+    margin-top: 0rem;
+    margin-left: 0.5rem;
+    text-align: left;
+  }
+}
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  background-color: $s-black;
+  // padding-bottom: .5rem;
+}
+.contact-section_form {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-bottom: 1px solid $p-white;
+  background-color: $s-black;
+}
+.form-values {
+  border: none;
+  color: $p-grey;
+  font-size: 1rem;
+  padding: 2rem 15rem 1rem 0rem;
+  background-color: $s-black;
+  border-bottom: 1px solid $p-white;
+}
+.input-message {
+  padding-left: 1.2rem;
+  padding-bottom: 5rem;
+}
+.contact-section_form--button {
+  border: none;
+  font-size: 1rem;
+  margin-bottom: 5rem;
+  margin-left: 12rem;
+  padding: 2rem 0rem 0.5rem 0rem;
+  letter-spacing: 0.1rem;
+  background-color: $s-black;
+  border-bottom: 2px solid $p-green;
+}
+.contact-section__ovals {
+    position: absolute;
+    top: 68.7rem;
+    left: -12rem;
+    background-color: transparent;
+}

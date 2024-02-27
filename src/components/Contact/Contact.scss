@@ -4,6 +4,13 @@
 .contact-section {
   padding: 4rem 0.5rem 3rem 0.5rem;
   background-color: $s-black;
+  @include tablet {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding-top: 3rem;
+  }
 }
 .contact-section__title {
   font-size: 2rem;
@@ -13,6 +20,7 @@
     padding-top: 1.5rem;
     background-color: transparent;
     z-index: 1;
+    padding-bottom: 2.5rem;
   }
   @include desktop {
     font-size: 4.9rem;
@@ -24,20 +32,21 @@
   margin: 1.25rem 0.5rem;
   letter-spacing: 0.01rem;
   background-color: $s-black;
+  text-align: left;
   @include tablet {
     width: 24rem;
     font-size: 0.9rem;
     letter-spacing: 0.04rem;
     margin-top: 0rem;
     margin-left: 0.5rem;
-    text-align: left;
+    letter-spacing: 0.04rem;
+    text-align: center;
   }
 }
 .contact-container {
   display: flex;
   flex-direction: column;
   background-color: $s-black;
-  // padding-bottom: .5rem;
 }
 .contact-section_form {
   display: flex;
@@ -48,6 +57,10 @@
   &:focus {
     border-color: $p-green;
     background-color: transparent;
+  }
+  @include tablet {
+    width: 61%;
+    border: none;
   }
 }
 .form-values {
@@ -62,6 +75,10 @@
   &:focus {
     border-color: $p-green;
     background-color: transparent !important;
+  }
+  @include tablet {
+    font-size: 0.8rem;
+    text-indent: -19.5rem;
   }
 }
 .input-message {
@@ -83,10 +100,18 @@
   letter-spacing: 0.1rem;
   background-color: $s-black;
   border-bottom: 2px solid $p-green;
+  @include tablet {
+   font-size: 0.85rem;
+   margin-left: 17rem;
+  }
 }
 .contact-section__ovals {
     position: absolute;
     top: 68.7rem;
     left: -12rem;
     background-color: transparent;
+    @include tablet {
+      top: 66.5rem;
+      left: -14rem;
+    }
 }

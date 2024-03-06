@@ -6,17 +6,33 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-top: 1px solid $p-white;
     margin: 4rem 1rem 1rem 1rem;
     padding: 3rem 0rem 1.5rem 0rem;
-    border-top: 1px solid $p-white;
+    @include tablet {
+        display: grid;
+        grid-template: repeat(3, 125px) / repeat(2, 350px);
+        justify-items: left;
+        align-items: center;
+    }
+    @include desktop {
+        margin: 4rem 8rem 1rem 8rem;
+        grid-template: repeat(2, 125px) / repeat(3, 350px);
+        justify-content: left;
+    }
 }
+
 .skills-section__content {
     font-size: 1.8rem;
     padding-bottom: 1.8rem;
+
     &:hover {
         background-color: $p-green;
       }
-
+@include tablet {
+    font-size: 2.5rem;
+    align-items: last baseline;
+}
 }
 .skills-section__ovals {
     position: absolute;
@@ -24,12 +40,13 @@
     left: 12.5rem;
     background-color: transparent;
     @include tablet {
-      top: 66.5rem;
-      left: -14rem;
+      top: 53rem;
+      left: 24.9rem;
+      @include dimensions (15rem, 5rem);
     }
     @include desktop {
-      top: 59.5rem;
-      left: -9rem;
-      width: 500px;
+      top: 51rem;
+      left: 49rem;
+      @include dimensions (17rem, 6.5rem);
     }
 }

@@ -1,0 +1,35 @@
+@use "../../styles/partials/__variables" as *;
+@use "../../styles/partials/__mixins" as *;
+
+.skills-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 1rem 1rem 1rem;
+    padding: 3rem 0rem 1.5rem 0rem;
+    border-top: 1px solid $p-white;
+}
+.skills-section__content {
+    font-size: 1.8rem;
+    padding-bottom: 1.8rem;
+    &:hover {
+        background-color: $p-green;
+      }
+
+}
+.skills-section__ovals {
+    position: absolute;
+    top: 67.5rem;
+    left: 12.5rem;
+    background-color: transparent;
+    @include tablet {
+      top: 66.5rem;
+      left: -14rem;
+    }
+    @include desktop {
+      top: 59.5rem;
+      left: -9rem;
+      width: 500px;
+    }
+}

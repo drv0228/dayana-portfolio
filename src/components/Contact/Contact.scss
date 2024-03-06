@@ -10,6 +10,7 @@
    justify-content: center;
    align-items: center;
    padding-top: 3rem;
+   padding-bottom: 0rem;
   }
   @include desktop {
     display: flex;
@@ -116,6 +117,13 @@
       border-color: $p-green;
       background-color: transparent !important;
     }
+    @include tablet {
+      text-indent: -19rem;
+    }
+    @include desktop {
+      padding-left: 0rem;
+      text-indent: -15.5rem;
+    }
   }
   
 .contact-section_form--button {
@@ -129,15 +137,15 @@
   border-bottom: 2px solid $p-green;
   @include tablet {
    font-size: 0.85rem;
-   margin-left: 17rem;
+   margin-left: 16.3rem;
   }
   @include desktop {
-    margin-left: 14.5rem;
+    margin-left: 12.3rem;
   }
 }
 .contact-section__ovals {
     position: absolute;
-    top: 68.7rem;
+    top: 97rem;
     left: -12rem;
     background-color: transparent;
     @include tablet {

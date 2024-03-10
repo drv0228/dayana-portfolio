@@ -5,6 +5,11 @@
  margin: 1rem 1rem;
  padding: 4rem 0rem;
  border-top: 1px solid $p-white;
+ @include tablet {
+    border-top: none;
+    padding: 0rem 0rem;
+    // margin: 0rem;
+ }
 }
 
 .projects-section__nav {
@@ -12,15 +17,48 @@
     justify-content: space-around;
     align-items:flex-end;
     margin-bottom: 3rem;
+    @include tablet {
+        margin: 0rem 1rem 3rem 1rem;
+        justify-content:space-between;
+        align-items: center;
+    }
 }
-
+.projects-section__gallery {
+  @include tablet {
+    display: grid;
+    grid-template: repeat(3, 470px) / repeat(2, 350px);
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.projects-section__project {
+   @include tablet {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+   }
+}
 .projects-section__images {
     width: 90%;
     height: 90%;
+    @include tablet {
+        width: 322px;
+        height: 253px;
+    }
 }
 .projects-section__tech-stack {
     display: flex;
     align-items: baseline;
+    @include tablet {
+        text-align: left;
+     
+        // display: grid;
+        // grid-template: repeat(2, 30px) / repeat(3, 70px);
+        // justify-items: left;
+        // align-items: center;
+    }
 }
 .projects-section__links {
     display: flex;
@@ -29,11 +67,18 @@
 h1 {
     font-size: 2.2rem;
     letter-spacing: 0rem;
+    @include tablet {
+        font-size: 3.4rem;
+    }
 }
 h2 {
     font-size: 1.6rem;
     padding: 1rem;
     text-align: left;
+    @include tablet {
+        font-size: 1.4rem;
+        padding-left: 0rem;
+    }
 }
 h3 {
     font-size: 1rem;
@@ -41,6 +86,11 @@ h3 {
     letter-spacing: 0.02rem;
     margin: 0rem 0.3rem 0.5rem 1rem;
     color: $p-grey;
+    @include tablet {
+        font-size: 0.9rem;
+        margin: 0rem 0.3rem 0.5rem 0rem;
+        // text-align: left;
+    }
 }
 h4 {
     font-size: 0.9rem;
@@ -48,6 +98,10 @@ h4 {
     padding-bottom: 0.5rem;
     margin: 0.5rem 1rem 0.5rem 1rem;
     border-bottom: 2px solid $p-green;
+    @include tablet {
+        font-size: 0.8rem;
+        margin-left: 0rem;
+    }
 }
 a {
     text-decoration: none;

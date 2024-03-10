@@ -14,7 +14,8 @@ function Projects() {
         <h1>Projects</h1>
         <h4 className="projects-section__contact">CONTACT ME</h4>
       </div>
-
+    <div className="projects-section__gallery">
+        <div className="projects-section__project">
       <img
         className="projects-section__images"
         src={dayify}
@@ -33,7 +34,9 @@ function Projects() {
         <h4>VIEW PROJECT</h4>
         <a href="https://github.com/drv0228/dayify-client"><h4>VIEW CODE</h4></a>
       </div>
+      </div>
 
+      <div className="projects-section__project">
       <img
         className="projects-section__images"
         src={memory}
@@ -52,7 +55,9 @@ function Projects() {
         <h4>VIEW PROJECT</h4>
         <a href="https://github.com/drv0228/memory-game"><h4>VIEW CODE</h4></a>
       </div>
+      </div>
 
+      <div className="projects-section__project">
       <img
         className="projects-section__images"
         src={inStock}
@@ -71,7 +76,8 @@ function Projects() {
         <h4>VIEW PROJECT</h4>
         {/* <h4>VIEW CODE</h4> */}
       </div>
-
+</div>
+<div className="projects-section__project">
       <img
         className="projects-section__images"
         src={cocktaillandia}
@@ -92,7 +98,8 @@ function Projects() {
           <h4>VIEW CODE</h4>
         </a>
       </div>
-
+</div>
+<div className="projects-section__project">
       <img
         className="projects-section__images"
         src={brainflix}
@@ -110,6 +117,8 @@ function Projects() {
       <div className="projects-section__links">
         <h4>VIEW PROJECT</h4>
         {/* <h4>VIEW CODE</h4> */}
+      </div>
+      </div>
       </div>
     </section>
   );

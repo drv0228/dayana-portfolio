@@ -45,8 +45,8 @@
       @include dimensions (15rem, 5rem);
     }
     @include desktop {
-      top: 51rem;
-      left: 49rem;
-      @include dimensions (17rem, 6.5rem);
+      top: 49rem;
+      left: 59rem;
+      @include dimensions (16rem, 7.5rem);
     }
 }

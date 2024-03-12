@@ -10,6 +10,9 @@
     padding: 0rem 0rem;
     // margin: 0rem;
  }
+ @include desktop {
+    margin: 3rem 7rem;
+ }
 }
 
 .projects-section__nav {
@@ -31,6 +34,9 @@
     align-items: center;
     justify-content: center;
   }
+  @include desktop {
+    grid-template: repeat(3, 625px) / repeat(2, 570px);
+  }
 }
 .projects-section__project {
    @include tablet {
@@ -46,6 +52,10 @@
     @include tablet {
         width: 322px;
         height: 253px;
+    }
+    @include desktop {
+        width: 540px;
+        height: 400px;
     }
 }
 .projects-section__tech-stack {
@@ -69,6 +79,9 @@ h1 {
     letter-spacing: 0rem;
     @include tablet {
         font-size: 3.4rem;
+    }
+    @include desktop {
+        font-size: 4.3rem;
     }
 }
 h2 {

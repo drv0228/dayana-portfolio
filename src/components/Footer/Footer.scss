@@ -1,0 +1,53 @@
+@use "../../styles/partials/__mixins" as *;
+@use "../../styles/partials/__variables" as *;
+
+.footer-section {
+        margin: .5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-top: 1px solid $p-white;
+        background-color: $s-black;
+        // margin: 0rem 7rem;
+        @include tablet {
+        align-items: first baseline;
+        margin-bottom: 3.5rem;
+        }
+        @include desktop {
+            padding: 0rem 8rem;
+            margin: 0rem;
+        }
+}
+.footer-details {
+    margin: 1rem 0rem 0.5rem 0rem;
+    background-color: $s-black;
+    @include tablet {
+        font-size: 1.8rem;
+        padding: 0.5rem;
+    }
+    @include desktop {
+        padding-top: 1rem;
+    }
+}
+.icons-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: $s-black;
+    position: absolute;
+}
+.icons {
+    padding: 0.2rem;
+    width: 50%;
+    position: relative;
+    top: 3rem;
+    z-index: 2;
+    background-color: transparent;
+    @include tablet {
+        top: 1.6rem;
+        left: 8rem;
+    }
+    @include desktop {
+        width: 1.8rem;
+        top: 2rem;
+    }
+}

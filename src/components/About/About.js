@@ -12,7 +12,8 @@ function About() {
       
       <div className="about-section">
       <p className="about-title">dayana</p>
-      <div className="icons-container"><img className="icons" src={gitIcon} alt={'icon where user can access git link of dayana'} />
+      <div className="icons-container">
+        <img className="icons" src={gitIcon} alt={'icon where user can access git link of dayana'} />
       <img className="icons" src={linkedln} alt={'icon where user can access linkedln link of dayana'} /></div>
       <img className="ovals" src={ovals} alt={'ovals image for a cute design'} />
       <img className="image" src={headshot} alt={'headshot of dayana, owner of the site'} />

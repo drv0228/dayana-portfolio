@@ -2,7 +2,7 @@
 @use "../../styles/partials/__mixins" as *;
 
 .about-section {
-    margin: .5rem;
+    // margin: .5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,7 +27,9 @@
 .icons-container {
     display: flex;
     justify-content: space-around;
+    background-color: #151515;
     position: absolute;
+
 }
 .icons {
     padding: 0.2rem;

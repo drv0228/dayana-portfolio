@@ -2,20 +2,21 @@
 @use "../../styles/partials/__variables" as *;
 
 .footer-section {
-        margin: .5rem;
+        
         display: flex;
         flex-direction: column;
         align-items: center;
-        border-top: 1px solid $p-white;
+        padding-bottom: 3rem;
         background-color: $s-black;
-        // margin: 0rem 7rem;
         @include tablet {
         align-items: first baseline;
-        margin-bottom: 3.5rem;
+        border-top: 1px solid $p-grey;
+        padding: .3rem 0rem .8rem 0rem;
+        margin: 0rem 1rem;
         }
         @include desktop {
-            padding: 0rem 8rem;
-            margin: 0rem;
+            padding: 0rem;
+            margin: 1.5rem 8rem;
         }
 }
 .footer-details {
@@ -29,13 +30,17 @@
         padding-top: 1rem;
     }
 }
-.icons-container {
+.footer-icons__container {
     display: flex;
     justify-content: space-around;
     background-color: $s-black;
     position: absolute;
+    margin: 0rem;
+    @include tablet {
+    margin: 0.2rem;
 }
-.icons {
+}
+.footer-icons {
     padding: 0.2rem;
     width: 50%;
     position: relative;
@@ -48,6 +53,6 @@
     }
     @include desktop {
         width: 1.8rem;
-        top: 2rem;
+        top: 1.7rem;
     }
 }

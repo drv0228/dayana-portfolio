@@ -93,7 +93,8 @@ function Projects() {
         <h3>NODE</h3>
       </div>
       <div className="projects-section__links">
-        <h4>VIEW PROJECT</h4>
+      <a href="https://cocktaillandia.netlify.app">
+         <h4>VIEW PROJECT</h4></a>
         <a href="https://github.com/drv0228/cocktailLandia">
           <h4>VIEW CODE</h4>
         </a>

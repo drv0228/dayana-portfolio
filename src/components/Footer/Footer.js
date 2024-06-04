@@ -10,8 +10,8 @@ function Footer() {
       <footer className="footer-section">
       <p className="footer-details">dayana</p>
       <div className="footer-icons__container">
-        <img className="footer-icons" src={gitIcon} alt={'icon where user can access git link of dayana'} />
-      <img className="footer-icons" src={linkedln} alt={'icon where user can access linkedln link of dayana'} />
+      <a href="https://github.com/drv0228"><img className="footer-icons" src={gitIcon} alt={'icon where user can access git link of dayana'} /></a>
+      <a href="https://www.linkedin.com/in/dayana-romero/"><img className="footer-icons" src={linkedln} alt={'icon where user can access linkedln link of dayana'} /></a>
       </ div>
       </footer>
 

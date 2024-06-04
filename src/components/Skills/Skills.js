@@ -9,7 +9,7 @@ function Skills() {
      <div><p className="skills-section__content">HTML</p></div>
        <div><p className="skills-section__content">CSS</p></div>
        <div><p className="skills-section__content">Javascript</p></div>
-       <div><p className="skills-section__content redesign">Accessibility</p></div>
+       <div><p className="skills-section__content redesign">FIREBASE</p></div>
        <div><p className="skills-section__content">React</p></div>
        <div><p className="skills-section__content">Sass</p></div>
        <img

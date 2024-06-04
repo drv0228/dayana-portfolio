@@ -1,6 +1,6 @@
 import React from "react";
 import "./Projects.scss";
-
+import forum from "../../assets/images/forum.png";
 import dayify from "../../assets/images/dayify.png";
 import memory from "../../assets/images/memory-game.png";
 import inStock from "../../assets/images/instock.png";
@@ -15,6 +15,27 @@ function Projects() {
         <h4 className="projects-section__contact">CONTACT ME</h4>
       </div>
     <div className="projects-section__gallery">
+    <div className="projects-section__project">
+      <img
+        className="projects-section__images"
+        src={forum}
+        alt={"dayify's project"}
+      />
+      <h2>MVP FORUM</h2>
+
+      <div className="projects-section__tech-stack">
+        <h3>HTML</h3>
+        <h3>CSS</h3>
+        <h3>SASS</h3>
+        <h3>REACT</h3>
+        <h3>FIREBASE</h3>
+      </div>
+      <div className="projects-section__links">
+      <a href="https://forum-630fc.web.app/"><h4>VIEW PROJECT</h4></a>
+        <a href="https://github.com/makeitMVPadmin/P3Forum-"><h4>VIEW CODE</h4></a>
+      </div>
+      </div>
+
         <div className="projects-section__project">
       <img
         className="projects-section__images"

@@ -5,39 +5,44 @@ import emailjs from "emailjs-com"; // Import the EmailJS library
 import ovals from "../../assets/images/Ovals.svg";
 
 function Contact() {
-    const handleMessage = (e) => {
-        e.preventDefault();
-    
-        const emailJsParams = {
-          serviceID: "service_pnn4umk",
-          templateID: "template_adpkgoi",
-          userID: "HJGzWgqJmIcrfFzp7",
-        };
-    
-        const formData = new FormData(e.target);
-        const userName = formData.get("userName");
-        const userEmail = formData.get("userEmail");
-        const userMessage = formData.get("userMessage");
-    
-        // Set the parameters for the email template
-        const emailParams = {
-          from_name: userName,
-          from_email: userEmail,
-          message: userMessage,
-        };
-    
-        // Send the email using EmailJS
-        emailjs.send(emailJsParams.serviceID, emailJsParams.templateID, emailParams, emailJsParams.userID)
-          .then((response) => {
-            console.log("Email sent successfully:", response);
-            
-          })
-          .catch((error) => {
-            console.error("Email sending failed:", error);
-            
-          });
-      };
-    
+  const handleMessage = (e) => {
+    e.preventDefault();
+
+    const emailJsParams = {
+      serviceID: "service_pnn4umk",
+      templateID: "template_adpkgoi",
+      userID: "HJGzWgqJmIcrfFzp7",
+    };
+
+    const formData = new FormData(e.target);
+    const name = formData.get("name");
+    const email = formData.get("email");
+    const message = formData.get("message");
+
+    // Set the parameters for the email template
+    const emailParams = {
+      from_name: name,
+      from_email: email,
+      message: message,
+    };
+
+    // Send the email using EmailJS
+    emailjs
+      .send(
+        emailJsParams.serviceID,
+        emailJsParams.templateID,
+        emailParams,
+        emailJsParams.userID
+      )
+      .then((response) => {
+        console.log("Email sent successfully:", response);
+        // Reset the form fields
+        e.target.reset();
+      })
+      .catch((error) => {
+        console.error("Email sending failed:", error);
+      });
+  };
 
   return (
     <section className="contact-section">
@@ -49,14 +54,36 @@ function Contact() {
         </p>
       </div>
       <form className="contact-section_form" onSubmit={handleMessage}>
-        <input className="form-values" required type="text" name="userName" placeholder="NAME"></input>
-        <input className="form-values" required type="email" name="userEmail" placeholder="EMAIL"></input>
-        <input required
-          className="form-values input-message"
-          type="text" name="userMessage"
-          placeholder="MESSAGE"
+        <input
+          className="form-values"
+          required
+          type="text"
+          maxlength="30"
+          name="name"
+          placeholder="NAME"
+          pattern="[A-Za-z\s]{1,50}"
+          title="Only letters and spaces allowed"
         ></input>
-        <button className="contact-section_form--button" type="submit">SEND MESSAGE</button>
+        <input
+          className="form-values"
+          required
+          type="email"
+          name="email"
+          maxlength="30"
+          placeholder="EMAIL"
+        ></input>
+        <textarea
+          required
+          className="form-values input-message"
+          type="text"
+          name="message"
+          placeholder="MESSAGE"
+          rows="5"
+        ></textarea>
+
+        <button className="contact-section_form--button" type="submit">
+          SEND MESSAGE
+        </button>
       </form>
       <img
         className="contact-section__ovals"

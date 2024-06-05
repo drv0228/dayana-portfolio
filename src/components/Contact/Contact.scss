@@ -73,8 +73,9 @@
   border: none;
   border-bottom: 1px solid $p-white;
   background-color: $s-black;
-  &:focus {
-    border-color: $p-green;
+  box-sizing: border-box;
+  &:active {
+    border-color: none;
     background-color: transparent;
   }
   @include tablet {
@@ -84,51 +85,48 @@
   @include desktop {
     width: 30%;
     padding-top: 3rem;
-    // margin-left: 10rem;
     
   }
 }
 .form-values {
   border: none;
+  width: 100%;
   color: $p-grey;
   font-size: 1rem;
-  text-indent: -15rem;
-  padding: 2rem 0rem 1rem 0rem;
+  text-align: left;
+  margin-top: 0.1rem;
+  padding: 2rem 1rem 1rem 1rem;
   background-color: $s-black;
   border-bottom: 1px solid $p-white;
 
   &:focus {
-    border-color: $p-green;
-    background-color: transparent !important;
-  }
+    outline: none;
+    border-color: #ccc;
+    background-color: transparent;
+    }
+  
   @include tablet {
     font-size: 0.8rem;
-    text-indent: -19.5rem;
-  }
-  @include desktop {
-    text-indent: -17rem;
   }
 }
+
 .input-message {
+    margin-top: 0.1rem;
     padding-left: 1.2rem;
     padding-bottom: 5rem;
-  
+    
     &:focus {
-      border-color: $p-green;
-      background-color: transparent !important;
-    }
-    @include tablet {
-      text-indent: -19rem;
-    }
-    @include desktop {
-      padding-left: 0rem;
-      text-indent: -15.5rem;
+      outline: none;
+    border-color: #ccc;
+    background-color: transparent;
     }
   }
   
 .contact-section_form--button {
   border: none;
+  cursor: pointer;
   font-size: 1rem;
+  margin-top: 0.1rem;
   margin-bottom: 5rem;
   margin-left: 12rem;
   padding: 2rem 0rem 0.5rem 0rem;

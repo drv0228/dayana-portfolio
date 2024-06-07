@@ -39,6 +39,7 @@
     z-index: 2;
     background-color: transparent;
     @include tablet {
+        width: 100%;
         top: 1.6rem;
         left: 8rem;
     }

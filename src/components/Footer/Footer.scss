@@ -20,7 +20,7 @@
         }
 }
 .footer-details {
-    margin: 1rem 0rem 0.5rem 0rem;
+    margin: 1.5rem 0rem 0.5rem 0rem;
     background-color: $s-black;
     @include tablet {
         font-size: 1.8rem;
@@ -44,7 +44,7 @@
 }
 .footer-icons {
     padding: 0.2rem;
-    width: 50%;
+    width: 100%;
     position: relative;
     top: 3rem;
     z-index: 2;

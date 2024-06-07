@@ -3,7 +3,7 @@ import "./About.scss";
 
 import headshot from "../../assets/images/headshot.png";
 import ovals from "../../assets/images/Ovals.svg";
-import oval from "../../assets/images/Oval.svg";
+import circle from "../../assets/images/circle.svg";
 import gitIcon from "../../assets/icons/akar-icons_github-fill.svg";
 import linkedln from "../../assets/icons/LinkedIn.svg";
 
@@ -40,7 +40,7 @@ function About() {
       />
       <img
         className="circle"
-        src={oval}
+        src={circle}
         alt={"circle image for a cute design"}
       />
       <div className="presentation-section">

@@ -88,7 +88,7 @@ function Contact() {
       <img
         className="contact-section__ovals"
         src={decor}
-        alt={"ovals image for a cute design"}
+        alt={"ovals decor for a cute design"}
       />
     </section>
   );

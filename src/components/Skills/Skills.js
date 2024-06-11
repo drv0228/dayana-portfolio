@@ -15,7 +15,7 @@ function Skills() {
        <img
         className="skills-section__ovals"
         src={ovals}
-        alt={"ovals image for a cute design"}
+        alt={"ovals decor for a cute design"}
       />
         </section>
     );

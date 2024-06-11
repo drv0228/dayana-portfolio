@@ -2,7 +2,7 @@ import React from "react";
 import "./About.scss";
 
 import headshot from "../../assets/images/headshot.png";
-import ovals from "../../assets/images/Ovals.svg";
+import ovals from "../../assets/images/ovals.svg";
 import circle from "../../assets/images/circle.svg";
 import gitIcon from "../../assets/icons/akar-icons_github-fill.svg";
 import linkedln from "../../assets/icons/LinkedIn.svg";
@@ -31,7 +31,7 @@ function About() {
       <img
         className="ovals"
         src={ovals}
-        alt={"ovals image for a cute design"}
+        alt={"ovals for a cute design"}
       />
       <img
         className="image"
@@ -41,7 +41,7 @@ function About() {
       <img
         className="circle"
         src={circle}
-        alt={"circle image for a cute design"}
+        alt={"a circle for a cute design"}
       />
       <div className="presentation-section">
         <p className="about-presentation">Nice to</p>

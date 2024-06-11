@@ -2,7 +2,7 @@ import React from "react";
 import "./Contact.scss";
 import emailjs from "emailjs-com"; // Import the EmailJS library
 
-import ovals from "../../assets/images/Ovals.svg";
+import decor from "../../assets/images/contact_decor.svg";
 
 function Contact() {
   const handleMessage = (e) => {
@@ -87,7 +87,7 @@ function Contact() {
       </form>
       <img
         className="contact-section__ovals"
-        src={ovals}
+        src={decor}
         alt={"ovals image for a cute design"}
       />
     </section>

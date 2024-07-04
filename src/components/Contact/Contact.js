@@ -49,7 +49,7 @@ function Contact() {
       <div className="contact-container">
         <p className="contact-section__title">Contact</p>
         <p className="contact-section__message">
-          I would love to hear about your project and how I could help. Please
+          I would love to hear about you and how I could help. Please
           fill in the form, and I'll get back to you as soon as possible.
         </p>
       </div>
@@ -95,3 +95,5 @@ function Contact() {
 }
 
 export default Contact;
+
+

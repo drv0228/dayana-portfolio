@@ -34,6 +34,9 @@
     padding-top: 0rem;
     padding-bottom: 3.5rem;
   }
+  &:hover {
+    color: $p-green;
+  }
 }
 .contact-section__message {
   font-size: 0.9rem;
@@ -151,7 +154,7 @@
       left: -14rem;
     }
     @include desktop {
-      top: 188rem;
+      top: 151rem;
       left: -9rem;
       width: 500px;
     }

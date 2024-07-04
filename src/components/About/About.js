@@ -57,7 +57,7 @@ function About() {
         Based in the Miami, I'm a full-stack developer passionate about building
         accessible web apss that users love.
       </p>
-      <p className="about-contact">CONTACT ME</p>
+      {/* <p className="about-contact">history of latest accomplishments</p> */}
     </div>
   );
 }

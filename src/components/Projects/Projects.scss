@@ -13,6 +13,13 @@
  @include desktop {
     margin: 3rem 7rem;
  }
+
+ &__title,
+ &__titles {
+    &:hover {
+        color: $p-green;
+      }
+ }
 }
 
 .projects-section__nav {
@@ -35,7 +42,7 @@
     justify-content: center;
   }
   @include desktop {
-    grid-template: repeat(3, 625px) / repeat(2, 570px);
+    grid-template: repeat(2, 625px) / repeat(2, 570px);
   }
 }
 .projects-section__project {

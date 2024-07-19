@@ -29,8 +29,8 @@ function Projects() {
           <h2 className="projects-section__titles">MVP FORUM</h2>
 
           <div className="projects-section__tech-stack">
-            <h3>HTML</h3>
-            <h3>CSS</h3>
+            <h3>JavaScript</h3>
+            {/* <h3>CSS</h3> */}
             <h3>SASS</h3>
             <h3>REACT</h3>
             <h3>FIREBASE</h3>
@@ -51,19 +51,20 @@ function Projects() {
             src={inStock}
             alt={"dayify's project"}
           />
-          <h2 className="projects-section__titles">INSTORE</h2>
+          <h2 className="projects-section__titles">INSTOCK</h2>
 
           <div className="projects-section__tech-stack">
-            <h3>HTML</h3>
-            <h3>CSS</h3>
-            <h3>SASS</h3>
+         
+            <h3>JavaScript</h3>
+            <h3>MySQL</h3>
             <h3>REACT</h3>
             <h3>NODE</h3>
+      
           </div>
           <div className="projects-section__links">
-            <a href="https://mystore-inventory-mng.netlify.app/">
+            {/* <a href="https://mystore-inventory-mng.netlify.app/">
               <h4>VIEW PROJECT</h4>
-            </a>
+            </a> */}
             <a href="https://github.com/drv0228/instore">
               <h4>VIEW CODE</h4>
             </a>
@@ -79,10 +80,10 @@ function Projects() {
           <h2 className="projects-section__titles">COCKTAILLANDIA</h2>
 
           <div className="projects-section__tech-stack">
-            <h3>HTML</h3>
-            <h3>CSS</h3>
+            <h3>JavaScript</h3>
             <h3>SASS</h3>
             <h3>REACT</h3>
+            <h3>APIs</h3>
             <h3>NODE</h3>
           </div>
           <div className="projects-section__links">
@@ -108,6 +109,7 @@ function Projects() {
             <h3>CSS</h3>
             <h3>SASS</h3>
             <h3>REACT</h3>
+            <h3>APIs</h3>
             <h3>NODE</h3>
           </div>
           <div className="projects-section__links">

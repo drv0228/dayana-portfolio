@@ -9,9 +9,13 @@
     @include tablet {
     align-items: first baseline;
     margin-bottom: 3.5rem;
+    padding-left: 0.5rem;
     }
     @include desktop {
-        padding: 0rem 7rem;
+        padding-left: 3rem;
+    }
+    @include bigdesktop {
+        padding: 0rem 5rem;
     }
 }
 .about-title {
@@ -84,6 +88,13 @@
         width: 19rem;
         height: 35rem;
         top: 0rem;
+        right: 4rem;
+        background-color: $s-black;
+    }
+    @include bigdesktop {
+        width: 19rem;
+        height: 35rem;
+        top: 0rem;
         right: 10rem;
         background-color: $s-black;
     }
@@ -94,6 +105,11 @@
  top: -3rem;
  right: 0rem;
  @include desktop {
+    top: 26.5rem;
+    right: 19.5rem;
+    z-index: 1;
+ }
+ @include bigdesktop {
     top: 26.5rem;
     right: 25.5rem;
     z-index: 1;

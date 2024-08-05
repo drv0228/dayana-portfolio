@@ -8,11 +8,11 @@ function Skills() {
         <section className="skills-section">
            <div><p className="skills-section__content">React</p></div>
            <div><p className="skills-section__content">Javascript</p></div>
+           <div><p className="skills-section__content">NODE.js</p></div>
            <div><p className="skills-section__content">SQL</p></div>
            <div><p className="skills-section__content redesign">APIs</p></div>
            <div><p className="skills-section__content redesign">CRUD Operations</p></div>
            <div><p className="skills-section__content redesign">FIREBASE</p></div>
-           <div><p className="skills-section__content">Sass</p></div>
            <div><p className="skills-section__content">CSS</p></div>
            <div><p className="skills-section__content">HTML</p></div>
       

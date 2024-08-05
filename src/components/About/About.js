@@ -54,8 +54,8 @@ function About() {
         </div>
       </div>
       <p className="about-author">
-        Based in the Miami, I'm a full-stack developer passionate about building
-        accessible web apss that users love.
+       Based in Miami, FL, I'm a full-stack developer passionate about building 
+      accessible and responsive web apps that users love.
       </p>
       {/* <p className="about-contact">history of latest accomplishments</p> */}
     </div>

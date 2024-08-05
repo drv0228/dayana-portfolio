@@ -4,13 +4,11 @@ import "./Projects.scss";
 import forum from "../../assets/images/forum.png";
 import dayify from "../../assets/images/dayify.png";
 // import memory from "../../assets/images/memory-game.png";
-import inStock from "../../assets/images/instock.png";
+import inStore from "../../assets/images/InStore.png";
 import cocktaillandia from "../../assets/images/cocktaillandia.png";
 // import brainflix from "../../assets/images/brainflix.png";
 
 function Projects() {
- 
-
   return (
     <section className="projects-section">
       <div className="projects-section__nav">
@@ -31,7 +29,6 @@ function Projects() {
           <div className="projects-section__tech-stack">
             <h3>JavaScript</h3>
             {/* <h3>CSS</h3> */}
-            <h3>SASS</h3>
             <h3>REACT</h3>
             <h3>FIREBASE</h3>
           </div>
@@ -48,18 +45,16 @@ function Projects() {
         <div className="projects-section__project">
           <img
             className="projects-section__images"
-            src={inStock}
+            src={inStore}
             alt={"dayify's project"}
           />
-          <h2 className="projects-section__titles">INSTOCK</h2>
+          <h2 className="projects-section__titles">INSTORE</h2>
 
           <div className="projects-section__tech-stack">
-         
             <h3>JavaScript</h3>
-            <h3>MySQL</h3>
             <h3>REACT</h3>
-            <h3>NODE</h3>
-      
+            <h3>NODE.js</h3>
+            <h3>SQL</h3>
           </div>
           <div className="projects-section__links">
             {/* <a href="https://mystore-inventory-mng.netlify.app/">
@@ -81,10 +76,10 @@ function Projects() {
 
           <div className="projects-section__tech-stack">
             <h3>JavaScript</h3>
-            <h3>SASS</h3>
             <h3>REACT</h3>
+            <h3>NODE.js</h3>
             <h3>APIs</h3>
-            <h3>NODE</h3>
+           
           </div>
           <div className="projects-section__links">
             <a href="https://cocktaillandia.netlify.app">
@@ -105,12 +100,10 @@ function Projects() {
           <h2 className="projects-section__titles">DAYIFY</h2>
 
           <div className="projects-section__tech-stack">
-            <h3>HTML</h3>
-            <h3>CSS</h3>
-            <h3>SASS</h3>
+            <h3>JavaScript</h3>
             <h3>REACT</h3>
+            <h3>NODE.js</h3>
             <h3>APIs</h3>
-            <h3>NODE</h3>
           </div>
           <div className="projects-section__links">
             {/* <h4>VIEW PROJECT</h4> */}
@@ -161,7 +154,7 @@ function Projects() {
 
         <div className="projects-section__links">
           {/* <h4>VIEW PROJECT</h4> */}
-          {/* <a href="https://github.com/drv0228/">
+        {/* <a href="https://github.com/drv0228/">
             <h4>VIEW CODE</h4>
           </a>
         </div> */}
@@ -172,9 +165,3 @@ function Projects() {
 }
 
 export default Projects;
-
-
-
-
-
-

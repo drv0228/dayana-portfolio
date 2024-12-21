@@ -45,30 +45,6 @@ function Projects() {
         <div className="projects-section__project">
           <img
             className="projects-section__images"
-            src={forum}
-            alt={"dayify's project"}
-          />
-          <h2 className="projects-section__titles">MVP FORUM</h2>
-
-          <div className="projects-section__tech-stack">
-            <h3>JavaScript</h3>
-            {/* <h3>CSS</h3> */}
-            <h3>REACT</h3>
-            <h3>FIREBASE</h3>
-          </div>
-          <div className="projects-section__links">
-            <a href="https://forum-630fc.web.app/">
-              <h4>VIEW PROJECT</h4>
-            </a>
-            <a href="https://github.com/makeitMVPadmin/P3Forum-">
-              <h4>VIEW CODE</h4>
-            </a>
-          </div>
-        </div>
-
-        <div className="projects-section__project">
-          <img
-            className="projects-section__images"
             src={learningHub}
             alt={"Learning Hub's project"}
           />
@@ -85,6 +61,30 @@ function Projects() {
               <h4>VIEW PROJECT</h4>
             </a>
             <a href="https://github.com/makeitMVPadmin/P4_Member_Achievement/tree/develop">
+              <h4>VIEW CODE</h4>
+            </a>
+          </div>
+        </div>
+
+        <div className="projects-section__project">
+          <img
+            className="projects-section__images"
+            src={forum}
+            alt={"dayify's project"}
+          />
+          <h2 className="projects-section__titles">MVP FORUM</h2>
+
+          <div className="projects-section__tech-stack">
+            <h3>JavaScript</h3>
+            {/* <h3>CSS</h3> */}
+            <h3>REACT</h3>
+            <h3>FIREBASE</h3>
+          </div>
+          <div className="projects-section__links">
+            <a href="https://forum-630fc.web.app/">
+              <h4>VIEW PROJECT</h4>
+            </a>
+            <a href="https://github.com/makeitMVPadmin/P3Forum-">
               <h4>VIEW CODE</h4>
             </a>
           </div>

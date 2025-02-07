@@ -33,7 +33,7 @@ function Projects() {
             <h3>AI</h3>
           </div>
           <div className="projects-section__links">
-            <a href="https://cheffyguru.com/">
+            <a href="https://cheffguru.com/">
               <h4>VIEW PROJECT</h4>
             </a>
             <a href="https://github.com/drv0228">

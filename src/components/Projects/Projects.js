@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./Projects.scss";
-import cheffy from "../../assets/images/cheffy.gif";
+import cheffy from "../../assets/images/cheffguru.gif";
 import learningHub from "../../assets/images/learningHub.gif";
 import forum from "../../assets/images/forum.png";
 import dayify from "../../assets/images/dayify.png";

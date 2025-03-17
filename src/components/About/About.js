@@ -28,24 +28,17 @@ function About() {
           />
         </a>
       </div>
-      <img
-        className="ovals"
-        src={ovals}
-        alt={"ovals for a cute design"}
-      />
+      <img className="ovals" src={ovals} alt={"ovals for a cute design"} />
       <img
         className="image"
         src={headshot}
         alt={"headshot of dayana, owner of the site"}
       />
-      <img
-        className="circle"
-        src={circle}
-        alt={"a circle for a cute design"}
-      />
+      <img className="circle" src={circle} alt={"a circle for a cute design"} />
       <div className="presentation-section">
         <p className="about-presentation">Nice to</p>
-        <p className="about-presentation">meet you!</p>
+        <br />
+        <p className="about-presentation"> meet you!</p>
       </div>
       <div className="presentation-section">
         <p className="about-presentation displace">I'm</p>
@@ -54,8 +47,8 @@ function About() {
         </div>
       </div>
       <p className="about-author">
-       Based in Miami, FL, I'm a full-stack developer passionate about building 
-      accessible and responsive web apps that users love.
+        Based in Miami, FL, I'm a full-stack developer passionate about building
+        accessible and responsive web apps that users love.
       </p>
       {/* <p className="about-contact">history of latest accomplishments</p> */}
     </div>
